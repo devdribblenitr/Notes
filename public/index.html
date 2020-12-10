@@ -17,6 +17,7 @@
 
   <!-- Bootstrap CDN & swiper js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
@@ -32,8 +33,8 @@
             <li class="px-3"><a href="./team.html" class="text-decoration-none text-dark d-block">Our Team</a></li>
             <li class="px-3"><a href="./about.html" class="text-decoration-none text-dark d-block">About Us</a></li>
             <li class="px-3"><a href="./contact.html" class="text-decoration-none text-dark d-block">Contact Us</a></li>
-            <li class="px-3"><a href="#" class="text-decoration-none text-dark d-block">Register</a></li>
-            <li class="px-3 pr-4"><a href="./login.html" class="text-decoration-none text-dark d-block">LogIN</a></li>
+            <li class="px-3"><a href="#" class="text-decoration-none text-dark d-block">Others</a></li>
+            <li class="px-3"><a href="./login.html" class="text-decoration-none text-dark d-block">SignIn/SignUp</a></li>
             <div id="closebtn" class="d-none" onclick="closeFunction()"><i class="fa fa-times"></i></div>
         </ul>
     </div>
@@ -44,7 +45,7 @@
             <div class="row">
            <div class="header_admin">
                <ul>
-                   <li><a href="#" class="text-white text-decoration-none px-2 d-block"> Admin Panel</a></li>
+                   <li><a href="./admin.html" class="text-white text-decoration-none px-2 d-block"> Admin Panel</a></li>
                    <li><a href="#" class="text-white text-decoration-none px-2 d-block"> <i class="fa fa-facebook"></i></a></li>
                    <li><a href="#" class="text-white text-decoration-none px-2 d-block"> <i class="fa fa-twitter"></i></a></li>
                    <li><a href="#" class="text-white text-decoration-none px-2 d-block"> <i class="fa fa-instagram"></i></a></li>
@@ -67,14 +68,15 @@
                             <li class="px-3"><a href="./team.html" class="text-decoration-none text-dark d-block">Our Team</a></li>
                             <li class="px-3"><a href="./about.html" class="text-decoration-none text-dark d-block">About Us</a></li>
                             <li class="px-3"><a href="./contact.html" class="text-decoration-none text-dark d-block">Contact Us</a></li>
-                            <li class="px-3"><a href="./login.html" class="text-decoration-none text-dark d-block">Register</a></li>
-                            <li class="px-3 pr-4"><a href="#" class="text-decoration-none text-dark d-block">LogIN</a></li>
+                            <!-- <li class="px-3"><a href="#" class="text-decoration-none text-dark d-block">Others</a></li> -->
+                            <li class="px-0 pr-0"><a href="./login.html" class="px-0 pr-0 text-decoration-none text-dark d-block"><button style="transform: scale(.7)" class="btn btn-success btn-lg">Sign In/Register</button></a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
         </div>
+        <div class="swiper-separeator5">
         <div class="swiperr swiper-container loading">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide" style="background-image:url(../assets/img_card.png)">
@@ -111,7 +113,7 @@
                 <div class="swiper-button-next swiper-button-white"></div>
         </div>
 
-
+        </div>
 
        </div>
        <div class="header_last container-fluid">
@@ -187,8 +189,51 @@
          <div class="col-11 col-md-11"><h2 class="text-left d-block main-heading">Latest Query</h2></div>
      </div>
      <div class="row">
-         <div class="col-12 col-md-12 bg-info my-5">
-            <p class="text-justify text-dark m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus iaculis ac enim consectetur.  ?</p>
+         <div class="col-12 col-md-12 my-5">
+         <!-- **************swiper*************************   -->
+<section class="swiper-separeator">
+
+    <div class="slider">
+        <div class="m-slider swiper-container swiper-separeator2">
+            <div class="swiper-wrapper">
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=0');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=10');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=20');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=30');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+         <!-- **************swiper*************************   -->
+
          </div>
      </div>
    </div>
@@ -201,8 +246,67 @@
             <div class="col-11 col-md-11"><h2 class="text-left d-block main-heading">About  A2NITR</h2></div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-12 bg-info my-5">
-               <p class="text-justify text-dark m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus iaculis ac enim consectetur.  ?</p>
+            <div class="col-12 col-md-12 my-5">
+               
+
+
+
+
+              <!-- **************swiper*************************   -->   
+<section class="swiper-separeator">
+
+    <div class="slider">
+        <div class="m-slider swiper-container swiper-separeator2">
+            <div class="swiper-wrapper">
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=0');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=10');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=20');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=30');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+ <!-- **************swiper*************************   -->
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
       </div>
@@ -217,8 +321,63 @@
         <div class="col-11 col-md-11"><h2 class="text-left d-block main-heading">Latest Articles</h2></div>
     </div>
     <div class="row">
-        <div class="col-12 col-md-12 bg-info my-5">
-           <p class="text-justify text-dark m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus iaculis ac enim consectetur.  ?</p>
+        <div class="col-12 col-md-12 my-5">
+          
+
+
+
+
+ <!-- **************swiper*************************   -->
+            
+<section class="swiper-separeator">
+
+    <div class="slider">
+        <div class="m-slider swiper-container swiper-separeator2">
+            <div class="swiper-wrapper">
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=0');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=10');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=20');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=30');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+ <!-- **************swiper*************************   -->
+
+
+
+
+
+
+
         </div>
     </div>
   </div>
@@ -231,8 +390,65 @@
             <div class="col-11 col-md-11"><h2 class="text-left d-block main-heading">Latest Trades</h2></div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-12 bg-info my-5">
-               <p class="text-justify text-dark m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus iaculis ac enim consectetur.  ?</p>
+            <div class="col-12 col-md-12 my-5">
+              
+
+
+
+                 <!-- **************swiper*************************   -->
+<section class="swiper-separeator">
+
+    <div class="slider">
+        <div class="m-slider swiper-container swiper-separeator2">
+            <div class="swiper-wrapper">
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=0');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=10');"></div>
+                        <div class="m-card__body">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=20');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+                <div class="m-slider__item swiper-slide">
+                    <div class="m-card" ontouchstart>
+                        <div class="m-card__header" style="background-image: url('https://unsplash.it/320/240?image=30');"></div>
+                        <div class="m-card__body">
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+ <!-- **************swiper*************************   -->
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
       </div>
@@ -332,15 +548,6 @@
 
 
         <!-- /* footer starts here */ -->
-        
-
-
-
-
-
-
-
-
 
 
 
