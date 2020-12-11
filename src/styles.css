@@ -6,10 +6,13 @@
     text-decoration: none;
   }
   body{
-    background: rgba(246, 246, 246, 1);
+    background: #eeeeee;
     overflow-x: hidden !important;
   }
-
+  .nav-list ul button{
+    background-color: #0CA678 !important;
+    border-radius: 0 !important;
+  }
   /* header starts here */
   .header_top{
     height: 30px;
@@ -100,12 +103,11 @@
   padding: 0;
 }
 
-.swiper-container {
+ /* .swiper-container {
   width: 100%;
-  height: 100vh;
   -webkit-transition: opacity .6s ease;
   transition: opacity .6s ease;
-}
+} */
 .swiper-container.swiper-container-coverflow {
   padding-top: 0%;
 }
@@ -356,6 +358,125 @@
     background: rgba(1, 126, 116, 1);
 
   }
+   /* ***************** section3 & section4,5,6 caresousel***************** */
+
+
+   .swiper-separeator {
+    padding: 30px;
+  }
+  
+  .swiper-separeator .swiper-container {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .swiper-separeator .swiper-slide {
+    height: auto;
+  }
+  
+  .swiper-separeator .m-slider {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #eee;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+  .m-card:hover .m-card__body{
+    transition: .3s;
+    color: black;
+  }
+  .swiper-separeator .m-slider .m-slider__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .swiper-separeator .m-card {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+            transition: .3s;
+    padding: 30px;
+    width: 100%;
+    /* border-radius: 3px; */
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+    min-height: 287px !important;
+    /* overflow-y: scroll !important; */
+    /* padding-bottom: 20px !important; */
+  }
+  .swiper-separeator .m-card .m-card__header {
+    padding-top: 75%;
+    height: 0;
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-separeator .m-card .m-card__body {
+    margin-top: 15px;
+    color: rgba(112, 112, 112, 1);
+    text-align: justify;
+  }
+  .m-card:hover .m-card__body{
+    transition: .2s;
+    color: black;
+  }
+  .swiper-separeator .m-card:active {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  
+  .swiper-separeator .slider {
+    margin: 0 -30px;
+  }
+  
+  .swiper-separeator .cards {
+    margin-top: 30px;
+  }
+  .swiper-separeator .cards .cards__note {
+    margin-top: 30px;
+  }
+  .swiper-separeator .cards .cards__body {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    .swiper-separeator .cards .cards__body {
+      display: -webkit-box;
+      display: flex;
+    }
+  }
+  .swiper-separeator .cards .cards__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 0;
+            flex: 0 1 auto;
+    margin-top: 30px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    .swiper-separeator .cards .cards__item {
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .swiper-separeator .cards .cards__item:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+
+
+
+
+
+
+   /* ***************** section3 ends***************** */
+
+
   
 /* quote section stars here*/
 .quote{
@@ -363,6 +484,7 @@
   background: url(../assets/thought.png) no-repeat center;
   background-size: cover;
   position: relative;
+  margin-top: 0px !important;
   
  }
  
@@ -665,12 +787,24 @@
    .swiper-slide .content .title span{
      font-size: 48px !important;
    }
+   /* .swiper-separeator .m-slider__item {
+     transform: scale(1);
+   } */
+   .m-slider__item, .m-card{
+      transform: scale(.6);
+      margin-top: -10px;
+  }
 
 }
 @media(max-width: 426px){
   #section2 .card-uper1{
     margin-top: 250px;
   }
+  .m-slider__item, .m-card{
+    transform: scale(.6);
+    margin-top: -45px;
+    padding: 10px auto;
+}
 }
 
 
@@ -696,8 +830,7 @@
    z-index: 11;
  }
 
-
-
-
-
+ .m-slider__item{
+   background-image: none !important;
+ }
 

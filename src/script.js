@@ -10,7 +10,7 @@ function closeFunction(){
 //swiper carousel
 // Params
 
-var sliderSelector = '.swiper-container',
+var sliderSelector = '.swiperr',
     options = {
       init: false,
       loop: true,
@@ -58,7 +58,7 @@ var sliderSelector = '.swiper-container',
     
 
 
-    var mySwiper = new Swiper ('.swiper-container', 
+    var mySwiper = new Swiper ('.swiperr', 
 	{
     speed:1000,
 		direction: 'horizontal',
@@ -95,3 +95,27 @@ mySwiper.init();
 
 
 //swiper carousel ends
+
+/*cards swiper js for trade and oters card*/
+var mySwiper = new Swiper ('.swiper-separeator2', {
+	loop: true,
+	autoplay:{
+		delay: 2000,
+	},
+	slidesPerView: 4,
+	spaceBetween: 30,
+	breakpoints: {
+		1200: {
+			slidesPerView: 3
+    },
+    768: {
+			slidesPerView: 2
+		}
+	}
+
+});
+
+
+
+/*cards swiper js for trade and oters card ends here*/
+
