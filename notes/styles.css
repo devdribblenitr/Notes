@@ -1,0 +1,19 @@
+.navbar{
+    background-color: rgb(255, 254, 254);
+}
+.navbar-brand{
+    padding-left: 20px;
+}
+
+.nav-item{
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    
+}
+.nav-link{
+    color: #000000;
+}
+
+.navbar-toggler-icon{
+    z-index: 10;
+}
