@@ -2,87 +2,221 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notes</title>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href=""><img src="img/logo.png" alt="" height="40" width="120"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar-link" aria-controls="navBar-link" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navBar-link">
-            <ul class="navbar-nav">
-                    <li class="nav-item active"><a href="" class="nav-link"> Home </a></li>
+            <a class="navbar-brand" href=""><img src="img/logo.png" alt="" height="40" width="120" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar-link" aria-controls="navBar-link" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navBar-link">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="" class="nav-link"> Home </a>
+                    </li>
                     <li class="nav-item"><a href="" class="nav-link">Our Team</a></li>
                     <li class="nav-item"><a href="" class="nav-link"> About US </a></li>
-                    <li class="nav-item"><a href="" class="nav-link"> Contact Us</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> Contact Us</a>
+                    </li>
                     <li class="nav-item"><a href="" class="nav-link"> Register</a></li>
                     <li class="nav-item"><a href="" class="nav-link"> Login</a></li>
-            </ul>
-          </div>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-    <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script>
-        <div id="wrapper" class="toggled">
+    <!-- pdfs body -->
+    <div class="body">
+        <div class="row p-4">
+            <div class="col-lg-2">
+                <div class="sidebar">
+                    <div class="sidebar__title">
+                        <h2>Notes</h2>
+                    </div>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#"><h1>Notes</h1>
-                     
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><h3>1st Year</h3></a>
-                </li>
-                <br>
-                <li>
-                    <a href="#"><h3>2nd Year</h3></a>
-                </li>
-                <br>
-                <li>
-                    <a href="#"><h3>3rd Year</h3></a>
-                </li>
-                <br>
-                <li>
-                    <a href="#"><h3>4th Year</h3></a>
-                </li>
-              <br>
-            </ul>
+                    <div class="sidebar__item">
+                        <a href="#">1st year</a>
+                    </div>
+                    <div class="divider div-transparent"></div>
+                    <div class="sidebar__item">
+                        <a href="#">2nd year</a>
+                    </div>
+                    <div class="divider div-transparent"></div>
+                    <div class="sidebar__item">
+                        <a href="#">3rd year</a>
+                    </div>
+                    <div class="divider div-transparent"></div>
+                    <div class="sidebar__item">
+                        <a href="#">4th year</a>
+                    </div>
+                </div>
+                <!-- /#wrapper -->
+            </div>
+            <div class="col-lg-10">
+                <div class="main">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title">
+                                <h2>Heading</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title">
+                                <h2>Heading</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title">
+                                <h2>Heading</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <div class="card__image--container">
+                                        <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ad temporibus accusantium cumque distinctio
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /#sidebar-wrapper -->
-
-      
     </div>
-    <!-- /#wrapper -->
+    <!-- JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
 
     <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+        $('#menu-toggle').click(function(e) {
+            e.preventDefault();
+            $('#wrapper').toggleClass('toggled');
+        });
     </script>
-
 </body>
 
 </html>
