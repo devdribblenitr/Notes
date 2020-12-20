@@ -41,6 +41,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
+        <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"><h1>Notes</h1>
+                     
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><h3>1st Year</h3></a>
+                </li>
+                <br>
+                <li>
+                    <a href="#"><h3>2nd Year</h3></a>
+                </li>
+                <br>
+                <li>
+                    <a href="#"><h3>3rd Year</h3></a>
+                </li>
+                <br>
+                <li>
+                    <a href="#"><h3>4th Year</h3></a>
+                </li>
+              <br>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+      
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
 </body>
 
 </html>
