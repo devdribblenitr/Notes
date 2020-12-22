@@ -229,6 +229,11 @@ box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
+.img-square{
+  height: 200px;
+  width: 220px;
+}
+
 .card__body {
   /* padding: 0.7rem 1rem; */
   font-size: 36px;
