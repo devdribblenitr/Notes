@@ -60,7 +60,7 @@ body{
 #sidebar-wrapper {
  position: absolute;
 width: 231px;
-min-height: 800px;
+min-height: 1500px;
 left: 0px;
 top: 147px;
 background: #FFFFFF;
@@ -230,8 +230,8 @@ box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .img-square{
-  height: 200px;
-  width: 220px;
+  height: 300px;
+  width: 350px;
 }
 
 .card__body {
