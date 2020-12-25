@@ -67,6 +67,7 @@
             </div>
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
+            <div class="sidebar2">
             <ul class="sidebar-nav" id="menu">
                 <li class="sidebar-brand bg-success">
                     <a href="#" class=" "><h1>Notes & Novels</h1>
@@ -74,8 +75,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>1st Year Notes</h3></a>
-                    <ul class="d-none sidebar-nav--dropdown">
+                    <a href="#" onclick="opensideFunction()"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>1st Year Notes</h3></a>
+                    <ul class="d-none sidebar-nav--dropdown" id="side2">
                         <ll><a href="./firstyearelectrical.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electrical</a></ll>
                         <ll><a href="./firstyearelectronics.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Eletronics</a></ll>
                     </ul>
@@ -176,6 +177,7 @@
                 </li>
             <br>
             </ul>
+            </div>
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -195,42 +197,47 @@
                                     <h2>Latest Notes</h2>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+                            <section class="swiper-separeator">
+
+                                <div class="slider">
+                                    <div class="m-slider swiper-container swiper-separeator2">
+                                        <div class="swiper-wrapper">
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                        Mathematics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Physics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Chemistry
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Mechanics
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
+                                </section>
                         </div>
                     </div>
                     <div class="main">
@@ -240,42 +247,47 @@
                                     <h2>Suggested Notes</h2>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+    <section class="swiper-separeator">
+
+                                <div class="slider">
+                                    <div class="m-slider swiper-container swiper-separeator2">
+                                        <div class="swiper-wrapper">
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                        Mathematics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Physics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Chemistry
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Mechanics
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
+                                </section>
                         </div>
                     </div>
                     <div class="main">
@@ -285,42 +297,47 @@
                                     <h2>Novels</h2>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+    <section class="swiper-separeator">
+
+                                <div class="slider">
+                                    <div class="m-slider swiper-container swiper-separeator2">
+                                        <div class="swiper-wrapper">
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                        Mathematics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Physics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Chemistry
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Mechanics
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
+                                </section>
                         </div>
                     </div>
                     <div class="main">
@@ -330,42 +347,47 @@
                                     <h2>Coding Related</h2>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
+    <section class="swiper-separeator">
+
+                                <div class="slider">
+                                    <div class="m-slider swiper-container swiper-separeator2">
+                                        <div class="swiper-wrapper">
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                        Mathematics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Physics
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Chemistry
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m-slider__item swiper-slide">
+                                                <div class="m-card" ontouchstart>
+                                                    <div class="m-card__header" style="background-image: url('../assets/mechanics.jpg');"></div>
+                                                    <div class="m-card__body mx-auto">
+                                                       Mechanics
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <div class="card__image--container">
-                                            <img src="../assets/pdf.png" class="img-fluid pdf-image" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="card__body">
-                                        <h2>Mathematics</h2>
-                                    </div>
-                                </div>
-                            </div>
+                                </section>
                         </div>
                     </div>
                 </div>
