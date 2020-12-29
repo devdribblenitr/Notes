@@ -10,18 +10,20 @@ function closeFunction(){
     document.getElementById("toggler-icon").style.display="block";
 }
 
+
 //scripts that fetch pdf from dropbox through adobe sdk api
 
 const dropboxLink = "https://www.dropbox.com/s/ig47a2lphjmnf68/a2math.pdf?dl=0";
 const clientId = "9df0d2ddd369458eaf116fcddc4bf6a8";
 const viewerOptions = {
-    //embedMode: "FULL_WINDOW",
-    embedMode: "SIZED_CONTAINER",
+    embedMode: "FULL_WINDOW",
+    //embedMode: "SIZED_CONTAINER",
     defaultViewMode: "FIT_PAGE",
     showDownloadPDF: true,
     showPrintPDF: true,
     showLeftHandPanel: true,
     showAnnotationTools: true
+    //embedMode = value ? 'SIZED_CONTAINER' : 'FULL_WINDOW';
 };
 
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
@@ -107,7 +109,6 @@ return;
 }
 
 file = files[0];
-
 if (file.size > 1024 * 1024 * 5) {
 showError("The file size should be < 5 MB. Please <a href='http://www.labnol.org/internet/file-upload-google-forms/29170/' target='_blank'>upgrade to premium</a> for receiving larger files in Google Drive");
 return;
@@ -161,3 +162,4 @@ function doGet(e) {
     }
     
   }
+  
