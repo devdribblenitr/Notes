@@ -13,11 +13,11 @@ function closeFunction(){
 
 //scripts that fetch pdf from dropbox through adobe sdk api
 
-const dropboxLink = "https://www.dropbox.com/s/ig47a2lphjmnf68/a2math.pdf?dl=0";
+const dropboxLink = "https://www.dropbox.com/s/g6410ebw9dfojg5/math%20note%20up-to%20LMVT.pdf?dl=0";
 const clientId = "9df0d2ddd369458eaf116fcddc4bf6a8";
 const viewerOptions = {
-    //embedMode: "FULL_WINDOW",
-    embedMode: "SIZED_CONTAINER",
+    embedMode: "FULL_WINDOW",
+    //embedMode: "SIZED_CONTAINER",
     defaultViewMode: "FIT_PAGE",
     showDownloadPDF: true,
     showPrintPDF: true,
