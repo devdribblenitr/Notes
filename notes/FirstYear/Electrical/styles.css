@@ -425,3 +425,6 @@
     }
 
   }
+ .card:hover .card__body h2{
+  text-decoration: none !important;
+}
