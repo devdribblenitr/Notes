@@ -84,7 +84,7 @@ body{
  #sidebar-wrapper::-webkit-scrollbar-thumb
   {
    border-radius: 0;
-   background-color: rgba(9, 116, 51, .5);
+   background-color: #0CA678;
   }
 #wrapper.toggled #sidebar-wrapper {
   width: 250px;
@@ -129,7 +129,7 @@ body{
   position: relative;
 }
 .sidebar-nav li a::before {
-  background-color: rgba(9, 116, 51, 1);
+  background-color: #0CA678;
   position: absolute;
   content: '';
   height: 100%;
@@ -162,7 +162,7 @@ body{
   height: 65px;
   font-size: 18px;
   line-height: 60px;
-  background: rgba(9, 116, 51, 1) !important;
+  background: #0CA678 !important;
   position: fixed;
   padding-right: 25px;
   z-index: 22;
@@ -237,7 +237,7 @@ body{
   font-size: 24px !important;
 }
 .pdf-details-imp{
-  border: 2px dashed rgba(9, 116, 51, 1);
+  border: 2px dashed #0CA678;
   padding: 10px !important;
   position: relative;
 }
@@ -252,7 +252,7 @@ body{
 .pdf-details-imp h2{
   font-size: 24px;
   font-family: Playfair Display;
-  color:  rgba(9, 116, 51, 1);
+  color:  #0CA678;
   background-color: white;
   display: block;
   width: 70px;
@@ -291,7 +291,7 @@ body{
   /* padding: 60px; */
 }
 .req-container2{
-  border: 2px dashed rgba(9, 116, 51, 1);
+  border: 2px dashed #0CA678;
   position: relative;
   padding: 60px;
   margin-top: 20px;
@@ -299,7 +299,7 @@ body{
 .req-container2-title{
   font-size: 24px;
   font-family: Playfair Display;
-  color:  rgba(9, 116, 51, 1);
+  color:  #0CA678;
   background-color: rgb(255, 255, 255);
   display: block;
   width: 188px;
@@ -518,4 +518,8 @@ body{
    top: 0;
    left: 0;
  }
+ .nav-item:last-child{
+   padding-bottom: 20px;
+ }
+
 }
