@@ -269,6 +269,53 @@ body{
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+.credit-container{
+  /* height: 400px; */
+  background-color: white;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  margin-top: 60px;
+  padding-top: 35px !important;
+  padding-bottom: 50px !important;
+}
+.pdf-details{
+  padding-bottom: 35px;
+}
+.pdf-details p{
+  font-size: 20px;
+  color: #3f3f3f;
+  font-family: Playfair Display;
+}
+.pdf-details p span{
+  color: #707070;
+  padding-left: 10px;
+  font-size: 24px !important;
+}
+.pdf-details-imp{
+  border: 2px dashed #0CA678;
+  padding: 10px !important;
+  position: relative;
+}
+.pdf-details-imp p{
+  text-align: justify;
+  line-height: 20px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  /* font-family: Montserrat; */
+  color: #707070;
+}
+.pdf-details-imp h2{
+  font-size: 24px;
+  font-family: Playfair Display;
+  color:  #0CA678;
+  background-color: white;
+  display: block;
+  width: 70px;
+  padding: 10px;
+  position: absolute;
+  top: -25px;
+  left: 2%;
+}
+
 .form-container{
   box-shadow: none !important;
 }
