@@ -13,7 +13,7 @@ function closeFunction(){
 
 //scripts that fetch pdf from dropbox through adobe sdk api
 
-const dropboxLink = "https://www.dropbox.com/s/g6410ebw9dfojg5/math%20note%20up-to%20LMVT.pdf?dl=0";
+const dropboxLink = "https://www.dropbox.com/s/zwwwujztq04kie7/HS1300%20mid%2019-20.pdf?dl=0";
 const clientId = "9df0d2ddd369458eaf116fcddc4bf6a8";
 const viewerOptions = {
     embedMode: "FULL_WINDOW",
