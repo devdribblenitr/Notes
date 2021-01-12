@@ -1,0 +1,16 @@
+
+
+1. copy/paste edita.html
+
+2. link logo and all the nav bar links 
+
+3. link all the sidebar links 
+
+4. edit everything in jquery script tag for .creadit-container
+
+5. copy/paste the givien code in req_form.html(no need to replace)
+<style> .input_box-label,.input_box-label-text{ font-weight: 300 !important; } .input_box-input, .input_box-input-text{  border: 1px solid rgba(104, 104, 104, 0.3) !important;  border-radius: 2px !important; }  .input_box-input{  padding: 7px 5px !important; }</style>
+
+6. link all the links of quick links, social links and policys
+
+7. replace the title of title tag and meta tag(in content property) with better and suitable none for seo, and link preoloader image (ie bollow the body tag)
