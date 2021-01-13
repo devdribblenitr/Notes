@@ -202,56 +202,6 @@ body{
 
 /********************** body notes Styles starts ********************/
 
-  /* card styles */
-
-  .card {
-    background-color: white;
-    padding: 1rem;
-    border: none;
-    margin-bottom: 1.75rem;
-    cursor: pointer;
-  }
-
-  .card__image--container {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-
-  .img-square{
-    height: 300px;
-    width: 350px;
-  }
-
-  .card__body {
-    /* padding: 0.7rem 1rem; */
-    font-size: 36px;
-    text-align: center;
-    color: #707070;
-    transition: all 0.35s;
-    margin-top: 40px;
-    font-family: Playfair Display;
-    padding-bottom: 30px;
-  }
-  #body-div .card {
-    /* min-height: 424px; */
-    border-radius: 0 !important;
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
-    cursor: pointer !important;
-    transition: transform 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
-
-  }
-  #body-div .card:hover{
-    transform: scale(1.06);
-    transition: transform 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  #body-div .card .card-inside {
-    height: 100%;
-    width: 100%;
-  }
-
-
 #body-div{
   width: calc(100% - 370px);
   margin: 114px 60px 0 310px;
@@ -261,11 +211,56 @@ body{
 }
 
 .pdf-container{
-  height: 550px;
+  height: 550px !important;
   background-color: white;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-
+.credit-container{
+  /* height: 400px; */
+  background-color: white;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  margin-top: 60px;
+  padding-top: 35px !important;
+  padding-bottom: 50px !important;
+}
+.pdf-details{
+  padding-bottom: 35px;
+}
+.pdf-details p{
+  font-size: 20px;
+  color: #3f3f3f;
+  font-family: Playfair Display;
+}
+.pdf-details p span{
+  color: #707070;
+  padding-left: 10px;
+  font-size: 24px !important;
+}
+.pdf-details-imp{
+  border: 2px dashed #0CA678;
+  padding: 10px !important;
+  position: relative;
+}
+.pdf-details-imp p{
+  text-align: justify;
+  line-height: 20px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  /* font-family: Montserrat; */
+  color: #707070;
+}
+.pdf-details-imp h2{
+  font-size: 24px;
+  font-family: Playfair Display;
+  color:  #0CA678;
+  background-color: white;
+  display: block;
+  width: 70px;
+  padding: 10px;
+  position: absolute;
+  top: -25px;
+  left: 2%;
+}
 .form-container{
   box-shadow: none !important;
 }
@@ -318,12 +313,44 @@ body{
   height: 300px;
   margin-top: 20px;
 }
-
-
-
-
-
-
+.pdf-full-screen{
+  color: white;
+  font-size: 30px;
+  padding: 9px;
+  background-color:  rgb(44, 44, 44);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  cursor: pointer !important;
+}
+.element:-webkit-full-screen {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(0, 0, 0);
+	margin: 0;
+}
+.element:-moz-full-screen {
+	background-color: rgb(0, 0, 0);
+	margin: 0;
+}
+.element:-ms-fullscreen {
+	background-color: rgb(0, 0, 0);
+	margin: 0;
+}
+.element:fullscreen { 
+	background-color: rgb(0, 0, 0);
+	margin: 0;
+}
+.element:fullscreen #embeddedView{
+  height: 100vh !important;
+}
+.element:-webkit-full-screen #embeddedView{
+  height: 100vh;
+}
+.content-1 p{
+  font-size: 10px !important;
+}
 /************************  request section*********************** */
 
 /* footer starts here */
@@ -365,9 +392,9 @@ body{
     color: rgba(255, 255, 255, 1);
     padding-top: 22.31px;
   }
-  .footer-lp .content-1{
-    /* padding-right: 152.07px !important; */
-  }
+  /* .footer-lp .content-1{
+    padding-right: 152.07px !important;
+  } */
   .footer-lp .content-1 .list-content{
     float: left;
     padding-top: 22.31px;
@@ -459,7 +486,7 @@ body{
    background-color: rgb(51, 51, 51) !important;
    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
    height: 60px !important;
-   background-color: ;
+   /* background-color: ; */
    width: 100vw;
    position: absolute;
    top: 70.33px;
