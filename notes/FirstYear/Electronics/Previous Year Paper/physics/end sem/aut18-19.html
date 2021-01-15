@@ -2,10 +2,41 @@
 <html lang="en">
 
 <head>
+    <script>
+		window.onload=function(){
+			document.getElementById('loader').style.display="none";
+			document.getElementById('content-preloader').style.display="block";
+		};
+		</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>A2NITRNotes</title>
+    <title> A2NITRNOTES-Physics Previous Year Question Papers</title>
+
+     <!------------------ META SEO ------------------>
+
+     <meta property="og:title" content="A2NITR Physics Previous Year Question Paper" />
+     <meta name="keywords"  content="previous year papers, physics previous year papers, a2znitr, nitrnotes, a2nitr, a2z, a2znitr,a2nitrqueries, nit, nit rourkela" />
+     <meta name="description" content="Tired of searching for notes and books online before examination? Here is the one-stop solution for that problem. A2NITR Notes & novels provides you the platform to search and request books or have a book published,be credited on our website.find a lot more things So, have fun in the journey of learning ahead without getting drained of examinations!" />
+     
+     <!------------------- meta facebook ------------------->
+ 
+     <meta property="og:type" content="website" />
+     <!-- <meta property="og:url" content="https://a2nitr.com/" /> -->
+     <!-- <meta property="og:image" content="https://a2nitr.com/assets/img/social-post.jpg" /> -->
+     <meta property="og:image:width" content="806" />
+     <meta property="og:image:height" content="280" />
+
+     
+ 
+ 
+     <!--------------------- favicon --------------------->
+     <link rel="apple-touch-icon" sizes="180x180" href="../../../../../../assets/favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../../../../../../assets/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../../../../../../assets/favicon/favicon-16x16.png">
+     <link rel="manifest" href="../../../../../../../assets/favicon/site.webmanifest">
+     <style>.form-container-main{ margin-top: 60px !important;} #body-div{margin-top: 80px !important;} .req-form-container .input_box-input { border: 0px solid red !important;} .pdf-container{height: 550px !important;} .form-container-main{ margin-top: 60px !important;} #body-div{margin-top: 80px !important;} .pdf-full-screen{ color: white ;font-size: 30px; padding: 16px; background-color:  rgb(44, 44, 44); position: absolute; bottom: 0; right: 0; z-index: 9; cursor: pointer !important;} .element:-webkit-full-screen {width: 100%; height: 100vh !important; background-color: rgb(0, 0, 0);  margin: 0;} .element:-moz-full-screen { background-color: rgb(0, 0, 0); margin: 0;} .element:-ms-fullscreen {  background-color: rgb(0, 0, 0); margin: 0; } .element:fullscreen { background-color: rgb(0, 0, 0); margin: 0; }.element:fullscreen #embeddedView{ height: 100vh !important;} .element:-webkit-full-screen #embeddedView{height: 100vh !important;} .content-1 p{ font-size: 10px !important;} #content-preloader{display:none;}#loader{ position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; width: 400px;  height: 400px;  z-index: 99;  transform: scale(.4);}#loader img{width:400px;}</style>
 
      <!-- fonts & icons-->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -22,14 +53,20 @@
   <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- CSS Link -->
   <link rel="stylesheet" href="./exam.css">
 </head>
 
 <body>
+    <div id="loader">
+        <img src="../../../../../../assets/preloader.svg"/>
+    </div>
+
+    <div id="content-preloader">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href=""><img src="../../../../../../assets/logo.png" alt="" height="40" width="120"></a>
+        <a class="navbar-brand" href="../../../../../../index.html"><img src="../../../../../../assets/logo.png" alt="" height="40" width="120"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLink" aria-controls="navbarLink" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +77,10 @@
                     <li class="nav-item"><a href="../../../../../../public/team.html" target="_blank" class="nav-link">Our Team</a></li>
                     <li class="nav-item"><a href="../../../../../../public/about.html" target="_blank" class="nav-link"> About US </a></li>
                     <li class="nav-item"><a href="../../../../../../public/contact.html" target="_blank" class="nav-link"> Contact Us</a></li>
+                    <li class="nav-item"><a href="../../../../../others/Guide/index.html" target="_blank" class="nav-link"> Seniors Guide</a></li>
+                    <li class="nav-item"><a href="../../../../../others/more.html" target="_blank" class="nav-link">More<i class="fa fa-angle-down px-1" aria-hidden="true"></i></a></li>
                     <li class="nav-item"><a href="../../../../../../public/reader.html" target="_blank" class="nav-link"> PDF Reader</a></li>
+                    
                    
             
           </ul>
@@ -67,7 +107,7 @@
                 <i class="fa fa-bars text-white" aria-hidden="true"></i>
             </div>
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" data-aos="fade-up">
             <ul class="sidebar-nav" id="menu">
                 <li class="sidebar-brand bg-success">
                     <a href="#" class=" "><h1>Notes & Novels</h1>
@@ -77,105 +117,90 @@
                 <li  onclick="dropdFuction()">
                     <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"  onclick="dropdFuction()"></i>1st Year Notes</h3></a>
                     <ul class="d-none sidebar-nav--dropdown">
-                        <ll><a href="./firstyearelectrical.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electrical</a></ll>
-                        <ll><a href="./firstyearelectronics.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Eletronics</a></ll>
+                        <ll><a href="../../../../../firstyearelectrical.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electrical</a></ll>
+                        <ll><a href="../../../../../firstyearelectronics.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Eletronics</a></ll>
                     </ul>
                 </li>
                 <br>
                 <li  onclick="dropdFuction()">
                     <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"  onclick="dropdFuction()"></i>2nd Year Notes</h3></a>
                     <ul class="d-none sidebar-nav--dropdown">
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Biotechnology </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Biomedical</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Ceramic</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Chemical</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Civil</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Computer Science</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Chemistry</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Humanities</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Life Science</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mathematics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Physics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electrical </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electronics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Food Process </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Industrial Design </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mechanical </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Metallurgy</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mining</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Architecture</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Management</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Earth and Atmospheric Sciences  </a></ll>
-
+                        <ll><a href="../../../../../../notes/SecYear/3rdSem/3rd.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>3rd Semester </a></ll>
+                        <ll><a href="../../../../../../notes/SecYear/4thSem/4th.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>4th Semester</a></ll>
                     </ul>
                 </li>
                 <br>
                 <li  onclick="dropdFuction()">
                     <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"  onclick="dropdFuction()"></i>3rd Year Notes</h3></a>
-                    <ul class="d-none sidebar-nav--dropdown" >
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Biotechnology </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Biomedical</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Ceramic</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Chemical</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Civil</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Computer Science</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Chemistry</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Humanities</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Life Science</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mathematics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Physics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electrical </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electronics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Food Process </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Industrial Design </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mechanical </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Metallurgy</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mining</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Architecture</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Management</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Earth and Atmospheric Sciences  </a></ll>
-
+                    <ul class="d-none sidebar-nav--dropdown">
+                        <ll><a href="../../../../../../notes/ThirdYear/5thSem/5th.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>5th Semester </a></ll>
+                        <ll><a href="../../../../../../notes/ThirdYear/6thSem/6th.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>6th Semester</a></ll>
                     </ul>
                 </li>
                 <br>
                 <li  onclick="dropdFuction()">
                     <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"  onclick="dropdFuction()"></i>4th Year Notes</h3></a>
-                    <ul class="d-none sidebar-nav--dropdown" id="sidebar-nav--dropdownid">
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Biotechnology </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Biomedical</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Ceramic</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Chemical</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Civil</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Computer Science</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Chemistry</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Humanities</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Life Science</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mathematics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Physics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electrical </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Electronics</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Food Process </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Industrial Design </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mechanical </a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Metallurgy</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Mining</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Architecture</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Management</a></ll>
-                        <ll><a href="#" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Earth and Atmospheric Sciences  </a></ll>
-
+                    <ul class="d-none sidebar-nav--dropdown">
+                        <ll><a href="../../../../../../notes/FourthYear/7thSem/7th.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>7th Semester </a></ll>
+                        <ll><a href="../../../../../../notes/FourthYear/8thSem/8th.html" class="pl-5"><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>8th Semester</a></ll>
                     </ul>
                 </li>
               <br>
               <li>
-                <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Suggested Notes</h3></a>
+                <a href="../../../../../others/Guide/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Senior's Guide</h3></a>
             </li>
                     <br> <li>
-                        <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Novels</h3></a>
+                        <a href="../../../../../others/Novels/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Literature & Novels</h3></a>
                     </li>
                 <br> <li>
-                    <a href="#"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Coding Related</h3></a>
+                    <a href="../../../../../others/Coding/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Coding & Software</h3></a>
+                    </li>
+                <br> <li>
+                    <a href="../../../../../others/Data/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Data & Analytics</h3></a>
+                </li>
+                <br> <li>
+                    <a href="../../../../../others/Devices/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Devices & Hardware</h3></a>
                 </li>
             <br>
+            <li>
+              <a href="../../../../../others/GS/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>General Studies</h3></a>
+          </li>
+          <br>
+          <li>
+            <a href="../../../../../others/Career/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Career</h3></a>
+        </li>
+        <br>
+        <li>
+          <a href="../others/Design/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Design</h3></a>
+      </li>
+      <br>
+      <li>
+        <a href="../../../../../others/Engineering/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Engineering</h3></a>
+    </li>
+    <br>
+    <li>
+      <a href="../../../../../others/Entertainment/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Entertainment & Humor</h3></a>
+  </li>
+  <br>
+    <li>
+      <a href="../../../../../others/Science/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Science</h3></a>
+  </li><br>
+  <li>
+    <a href="../../../../../others/Spiritual/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Spiritual</h3></a>
+</li><br>
+<li>
+  <a href="../../../../../others/Technology/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Technology</h3></a>
+</li><br>
+<li>
+  <a href="../../../../../others/HR/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Recruiting & HR</h3></a>
+</li><br>
+<li>
+  <a href="../../../../../others/Leadership/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Leadership</h3></a>
+</li>
+<br>
+<li>
+  <a href="../../../../../others/Economy/index.html"><h3><i class="fa fa-book mr-3 fa-icon" aria-hidden="true"></i>Economy & Finance</h3></a>
+</li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -183,7 +208,6 @@
         
       
     </div>
-
 
 
 
@@ -208,39 +232,42 @@
 
 
                             <!-- ******************pdf file or notes****************** -->
-                            <div class="col-sm-12 col-md-12 pdf-container px-0 p-0" id="embeddedView">  
+                            <div class="element col-sm-12 col-md-12 px-0 p-0" data-aos="fade-up">
+                            <div class="col-sm-12 col-md-12 pdf-container px-0 p-0" id="embeddedView">                          
+                            </div>
+                            <div id="go-pdf"><i class="fa fa-expand pdf-full-screen"></i></div> 
                             </div>
 
                             <!-- ****************** / pdf file or notes****************** -->
                             <!-- ****************** credits****************** -->
-
-                            <div class="col-sm-12 col-md-12 mx-auto credit-container px-0 pt-5"> 
+                           
+                            <div class="col-sm-12 col-md-12 mx-auto credit-container px-0 pt-5" data-aos="fade-up"> 
                                 <div class="row mx-auto">
                                 <div class="col-11 col-md-11 mx-auto">
                                 <div class="row">
                                     <div class="col-12 col-md-7 px-0 pdf-details">
-                                        <p class="py-2">Title: <span>Mathematics Assignment</span></p>
-                                        <p class="py-2">Category: <span>Notes</span></p>
-                                        <p class="py-2">Sub-category: <span>First Year Maths</span></p>
+                                        <p class="py-2">Title: <span class="title">  </span></p>
+                                        <p class="py-2">Category: <span class="category"> </span></p>
+                                        <p class="py-2">Sub-category: <span id="sub-cate"> </span></p>
                                     </div>
                                     <div class="col-12 col-md-5 px-0 pdf-details">
-                                        <p class="py-2">Credits: <span>Admin</span></p>
-                                        <p class="py-2">Roll No: <span>NA</span></p>
-                                        <p class="py-2">Uploaded On: <span>26/12/2020</span></p>
+                                        <p class="py-2">Credits: <span class="credits"> </span></p>
+                                        <p class="py-2">Roll No: <span id="roll"> </span></p>
+                                        <p class="py-2">Uploaded On: <span id="uploaded"></span></p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 col-md-12 pdf-details-imp px-0 py-2">
                                         <h2>Note</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas sit cursus feugiat pellentesque urna nulla faucibus lorem. Cras arcu integer et duis. Quam massa, sed suspendisse aliquet. Donec turpis tincidunt elementum volutpat elit suspendisse. Lacus, egestas augue dictum ut.  </p>
+                                        <p><span class="title"></span> under the category <span class="category"></span> is contributed by <span class="credits"></span>. We are immensely grateful for this contribution made by <span class="credits"></span>. We would be glad to have more contributors on board and you can also aid us with your material. Also, if you are in search of any specific notes/books  you can reach us out by filling the form given bellow </p>
                                     </div>
                                 </div>
                                 </div>
                                 </div>
-                            </div>
+                            </div>  
                             <!-- ****************** / credits****************** -->
                             <!-- ******************upload file****************** -->
-                            <div class="col-sm-12 mx-auto col-md-12 form-container-main px-0 pt-5">  
+                            <div class="col-sm-12 mx-auto col-md-12 form-container-main px-0 pt-5" data-aos="fade-up">  
                                 <iframe src="https://script.google.com/macros/s/AKfycbyzqHI6UIqAN2msAoE703uhjkQLkWOEan73sUEHxmktXlxMd6j-UGGFMw/exec" id="iframe-uploader" frameborder="0" class=" "></iframe>
                                 
                              </div>
@@ -256,7 +283,7 @@
                                 <div class="col-11 col-md-11 mx-auto req-container2 p-0" >
                                 <h2 class="req-container2-title">Request A Book</h2>
 
-                                    <iframe src="./req_form.html" frameborder="0" id="req_form" class="col-12 col-md-12 p-0"></iframe>
+                                <iframe src="./req_form.html" frameborder="0" id="req_form" class="col-12 col-md-12 p-0"></iframe>
 
 
                                 
@@ -275,23 +302,22 @@
 
                             <!-- footer starts here -->
 
-                            
-                            <footer>
-                                <div class="bg-dark text-white footer-lp container-fluid">
+                            <footer data-aos="fade-up">
+                                <div class="bg-dark text-white footer-lp container-fluid pb-4">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-12 col-md-12 footer-inside">
                                             <div class="row">
                                                 <div class="col-11 col-md-3 footer-content content-1">
                                                     <h2 class="text-left">About</h2>
                                                     <div class="row">
-                                                    <div class="col-8 col-md-8"><p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat vitae, ut volutpat adipiscing neque non. Magna habitant sed ac ultricies venenatis, eu, malesuada sit sed. </p></div>
-                                                    <div class="col-4 col-md-4"></div>
+                                                    <div class="col-8 col-md-11"><p class="text-justify">A2NITR consists of group of developers complying and culminating the need of creation. A2NITR Notes & Novels consists provides with the information regarding the diverse academic curriculum and materials as well as co-curriculum of the campus.So get your desired information by just one click. </p></div>
+                                                    <div class="col-4 col-md-1"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-11 col-md-3 footer-content content-2"><h2 class="text-left">Quick Links</h2>
                                                 <div class="list-content d-inline-block">
                                                     <div class="row">
-                                                     <div class="col-6 col-md-6 px-0">
+                                                     <div class="col-6 col-md-5 px-0">
                                                     <ul>
                                                         <li><a href="https://www.nitrkl.ac.in/" target="_blank">NIT Rourkela</a></li>
                                                         <li><a href="https://mail.nitrkl.ac.in/" target="_blank">WebMail</a></li>
@@ -299,12 +325,14 @@
                                                         <li><a href="https://mondaymorning.nitrkl.ac.in/" target="_blank">Monday Morning</a></li>
                                                     </ul>
                                                     </div>
-                                                    <div class="col-6 col-md-6 px-0">
+                                                    <div class="col-6 col-md-7 px-0">
                                                     <ul>
-                                                        <li><a href="../../../../../../ask/index.html" target="_blank">A2NITRAsk</a></li>
+                                                        <li><a href="../../../../../../queries/index.html" target="_blank">A2NITRQueries</a></li>
                                                         <li><a href="../../../../../../blog/index.html" target="_blank">A2NITRBlog</a></li>
                                                         <li><a href="../../../../../../clubs/index.html" target="_blank">A2NITRClubs</a></li>
                                                         <li><a href="../../../../../../notes/index.html" target="_blank">A2NITRNotes</a></li>
+                                                        <li><a href="../../../../../../trade/index.html" target="_blank">A2NITRTrade</a></li>
+
                                                     </ul>
                                                     </div>
                                                     </div>
@@ -313,20 +341,21 @@
                                                 <div class="col-11 col-md-3 footer-content content-3"><h2 class="text-left">Social Links</h2>
                                                 <div>
                                                     <ul>
-                                                        <li><a href="#">Facebook</a></li>
-                                                        <li><a href="#">Instagram</a></li>
-                                                        <li><a href="#">Twitter</a></li>
-                                                        <li><a href="#">LinkedIn</a></li>
+                                                        <li><a target="_blank" href="https://www.facebook.com/107351947974127/posts/107352761307379/?substory_index=0&flite=scwspnss">Facebook</a></li>
+                                                        <li><a target="_blank" href="https://www.instagram.com/invites/contact/?i=1pul3b874jsc2&utm_content=kris7cc">Instagram</a></li>
+                                                        <li><a target="_blank" href="https://twitter.com/A2Nitr?s=08">Twitter</a></li>
+                                                        <li><a target="_blank" href="https://in.linkedin.com/company/A2nitr">LinkedIn</a></li>
+                                                        <li><a target="_blank" href="https://github.com/A2ZNITR">Github</a></li>
                                                     </ul>
                                                 </div>
                                                 </div>
                                                 <div class="col-11 col-md-3 footer-content content-4"><h2 class="text-left">Policy</h2>
                                                     <div>
                                                         <ul>
-                                                            <li><a href="#">Terms & Conditions</a></li>
-                                                            <li><a href="#">Privacy Policy</a></li>
-                                                            <li><a href="../../../../../../public/contact.html" target="_blank">Contact Us</a></li>
-                                                            <li><a href="#">Stay Updated </a></li>
+                                                            <li><a target="_blank" href="../../../../../../terms.html">Terms & Conditions</a></li>
+                                                            <li><a target="_blank" href="../../../../../../privacy.html">Privacy Policy</a></li>
+                                                            <li><a target="_blank" href="../../../../../../public/contact.html" target="_blank">Contact Us</a></li>
+                                                            <li><a target="_blank" href="#">Stay Updated </a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -342,7 +371,6 @@
                                 </div>
                     
                             </footer>
-                    
                             <!-- / footer starts here -->
 
                     
@@ -412,6 +440,84 @@ crossorigin="anonymous"></script>
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+    </script>
+
+<script>
+
+    /* Get into full screen */
+    function GoInFullscreen(element) {
+        if(element.requestFullscreen)
+            element.requestFullscreen();
+        else if(element.mozRequestFullScreen)
+            element.mozRequestFullScreen();
+        else if(element.webkitRequestFullscreen)
+            element.webkitRequestFullscreen();
+        else if(element.msRequestFullscreen)
+            element.msRequestFullscreen();
+    }
+    
+    /* Get out of full screen */
+    function GoOutFullscreen() {
+        if(document.exitFullscreen)
+            document.exitFullscreen();
+        else if(document.mozCancelFullScreen)
+            document.mozCancelFullScreen();
+        else if(document.webkitExitFullscreen)
+            document.webkitExitFullscreen();
+        else if(document.msExitFullscreen)
+            document.msExitFullscreen();
+    }
+    
+    /* Is currently in full screen or not */
+    function IsFullScreenCurrently() {
+        var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+        
+        // If no element is in full-screen
+        if(full_screen_element === null)
+            return false;
+        else
+            return true;
+    }
+    
+    $("#go-pdf").on('click', function() {
+        if(IsFullScreenCurrently())
+            GoOutFullscreen();
+        else
+            GoInFullscreen($(".element").get(0));
+    });
+    
+    $(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFullscreenChange', function() {
+        if(IsFullScreenCurrently()) {
+            //$(".element span").text('Full Screen Mode Enabled');
+            $("#go-pdf").html('<i class="fa fa-compress pdf-full-screen"></i>'); }
+        else {
+            //$(".element span").text('Full Screen Mode Disabled');
+            $("#go-pdf").html('<i class="fa fa-expand pdf-full-screen"></i>');
+        }
+    });
+    
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".title").text("Autumn 18-19 Endsem");
+            $(".category").text("Previous Year Paper");
+            $("#sub-cate").text("First Year Physics");
+            $(".credits").text("Admin");
+            $("#roll").text("NA");
+            $("#uploaded").text("26/12/2020");
+        });
+    </script>
+
+
+    <!-- *************AOS data************* -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+           offset: 200,
+           duration: 900,
+           easing: 'ease',
+           once: true,
+       });
     </script>
 
 </body>
