@@ -7,9 +7,11 @@
     text-decoration: none;
 }
 body{
-  background: #E9E7EC;
   overflow-x: hidden !important;
-  background: #eee;
+  background-color: #eee;
+  background-image: url("../../assets/bg01.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
   scroll-behavior: auto;
 }
 /*************************navbar styling **********************/
@@ -213,6 +215,7 @@ body{
     border: none;
     margin-bottom: 1.75rem;
     cursor: pointer;
+    min-height: 408px !important;
   }
 
   .card__image--container {

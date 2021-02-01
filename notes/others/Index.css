@@ -7,14 +7,11 @@
     text-decoration: none;
 }
 body{
-  /* background: #E9E7EC; */
-  background-image: url("../../assets/bg.png") !important;
-  background-position: center;
-  background-size: 400%;
-  background-repeat: no-repeat;
+  background-image: url("../../assets/bg01.png") !important;
+  background-repeat: repeat;
   background-attachment: fixed !important;
   overflow-x: hidden !important;
-  background: #eee;
+  background-color: #eee;
   scroll-behavior: auto;
 }
 /*************************navbar styling **********************/

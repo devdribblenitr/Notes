@@ -7,9 +7,11 @@
     text-decoration: none;
 }
 body{
-  background: #E9E7EC;
   overflow-x: hidden !important;
-  background: #eee;
+  background-color: #eee;
+  background-image: url("../../../assets/bg01.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
   scroll-behavior: auto;
 }
 /*************************navbar styling **********************/
@@ -214,6 +216,15 @@ body{
   height: 550px !important;
   background-color: white;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.Error{
+  margin-top: 0 !important;
+  padding-top: 15px !important;
+}
+.Error2{
+  padding-top: 60px !important;
+  padding-bottom: 70px !important;
 }
 .credit-container{
   /* height: 400px; */
