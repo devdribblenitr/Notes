@@ -1,3 +1,4 @@
+#content-preloader{display:none;}#loader{ position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; width: 400px;  height: 400px;  z-index: 99;  transform: scale(.4);}#loader img{width:400px;}
 *{
   margin: 0;
   padding: 0;

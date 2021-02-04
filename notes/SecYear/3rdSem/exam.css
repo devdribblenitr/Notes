@@ -226,6 +226,9 @@ body{
   padding-top: 60px !important;
   padding-bottom: 70px !important;
 }
+.Error2 img{
+  pointer-events: none;
+}
 .credit-container{
   /* height: 400px; */
   background-color: white;
