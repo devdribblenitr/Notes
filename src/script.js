@@ -28,7 +28,9 @@ var sliderSelector = '.swiperr',
         //autoplay: 5000,
         speed: 800,
         spaceBetween: 0,
-        autoplayDesableOnInteraction: true
+        autoplayDesableOnInteraction: false, 
+        //mousewheelControl: true,
+        
       },
       grabCursor: true,
       parallax: true,
@@ -36,6 +38,11 @@ var sliderSelector = '.swiperr',
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+      mousewheel: 
+      {
+        invert: true,
+        releaseOnEdges: false,sensitivity: 0,
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -109,7 +116,8 @@ var mySwiper = new Swiper ('.swiper-separeator2', {
 			slidesPerView: 3
     },
     768: {
-			slidesPerView: 2
+      
+			slidesPerView: 1
 		}
 	}
 

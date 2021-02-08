@@ -1,15 +1,30 @@
 
  $(".title").text("Lecture");
-            $(".category").text("M&I Notes");
+            $(".category").text("Network Theory Notes");
 
 
-https://www.dropbox.com/s/chy7b5nfylanwkh/%5BPrithwiraj_Purkait%5D_Electrical_and_Electronics_Measurment.pdf?dl=0
+Network Theory            
 
-https://www.dropbox.com/s/wg5jqi4lll94zik/EMI.pdf?dl=0
 
-https://www.dropbox.com/s/qitjg6wrh10sh3s/EMI_1.pdf?dl=0
+https://www.dropbox.com/s/70tvwc60e2jio0z/Copy%20of%20electronic-devices-and-circuit-theory-robert-boylestad-louis-nashelsky-7th-edition_sem3.pdf?dl=0
 
-https://www.dropbox.com/scl/fi/jajd96a2womnwmiwohwum/Analog-Meters.docx?dl=0&rlkey=f2gvb2cfhv9piucmthb0yk7bw
+https://www.dropbox.com/s/zy9pc74jl5zwzhh/Fundamentals%20of%20Electric%20Circuits%20%28Alexander%20and%20Sadiku%29%2C%204th%20Edition.pdf?dl=0
+
+https://www.dropbox.com/s/2k6bz7u78okr0e1/network%20analysis%20two%20port%20problem.pdf?dl=0
+
+https://www.dropbox.com/s/y89fz3phrkmfekf/Network%20Theory%202.pdf?dl=0
+
+https://www.dropbox.com/s/lceynfccf00myqr/Network%20Theory.pdf?dl=0
+
+https://www.dropbox.com/s/zzxrn8togum9g29/Second-Order-Circuits.pdf?dl=0
+
+
+https://www.dropbox.com/s/c9m5u6qlvmkengz/solutions-manual-of-fundamentals-of-electric-circuits-4ed-by-alexander-m-sadiku-www-eeeuniversity-com.pdf?dl=0
+
+
+
+
+
 
 
 
