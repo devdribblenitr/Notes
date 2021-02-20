@@ -11,7 +11,7 @@
   }
   .nav-list ul button{
     background-color: #0CA678 !important;
-    border-radius: 0 !important;
+    border-radius: 0 !important; 
   }
   /* header starts here */
   .header_top{
@@ -36,7 +36,7 @@
   background-color: #0CA678;
 }
 .header2{
-  height: 704px;
+  height: 650px;
   width: 100%;
   background-color: #0CA678;
 }
@@ -290,7 +290,7 @@
 /* section2 starts here */
 
 #section2 .card2{
-  height: 296px;
+  /* height: 296px; */
   margin-top: 30px;
   transition: 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -795,9 +795,6 @@
 
 }
 @media(max-width: 426px){
-  #section2 .card-uper1{
-    margin-top: 250px;
-  }
  
 .header_last .card-info.col-11{
   transform: translateY(0);
@@ -805,8 +802,17 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 #section2 .card_grp{
-  margin-top: 350px !important;
+  margin-top: 520px !important;
 }
+.card2 .inside-card2 h2{
+  font-size: 20px;
+  margin-top: 10px !important;
+}
+.card2 .inside-card2 p{
+  font-size: 10px;
+  padding: 30px 10px 10px 10px;
+}
+
 #logo img {
   height: 35px;
   margin-top: 27.5px !important;
