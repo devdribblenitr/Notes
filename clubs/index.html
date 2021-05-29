@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>A2NITRNotes</title>
+    <title>A2NITRClubs</title>
 
     <!-- fonts & icons-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -26,176 +26,269 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
     <!-- CSS Link -->
     <link rel="stylesheet" href="./src/styles.css" />
-</head>
+    <style>
+        .plyr--full-ui input[type=range] {
+  color:  #0CA678 !important;
+}
 
+.plyr__control--overlaid {
+  background: rgba( #0CA678, .8) !important;
+  transform: scale();
+}.plyr__video-wrapper.plyr__video-embed .plyr__poster{
+    background-image: url(../assets/mechanics.jpg) !important;
+    background-size: cover;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+  background:  #0CA678 !important;
+}
+button.plyr__control.plyr__control--overlaid{
+    background-color:  #0CA678 !important;
+}.video-player:hover button.plyr__control.plyr__control--overlaid svg{transform: scale(1.5);transition: transform 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);}
+.video-player:hover button.plyr__control.plyr__control--overlaid{
+    background-color:#099c70 !important;
+    padding: 25px;
+    cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, .3);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, .3);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, .3);}}
+@keyframes pulse {to {box-shadow: 0 0 0 20px #1bca9671,0 0 0 40px #20d19c77;}}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba( #0CA678, .5) !important;
+}
+
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+  background:  #0CA678;
+}
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded=true] {
+  background: red !important;
+}
+    </style>
+</head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light"> 
         <div class="container-fluid">
-            <a class="navbar-brand" href=""><img src="../assets/logo.png" alt="" height="40" width="120" /></a>
+            <a class="navbar-brand" href=""><img src="../assets/logo-club.png" alt="" height="40" width="120" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar-link" aria-controls="navBar-link" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navBar-link">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a href="" class="nav-link"> Home </a>
+                        <a href="./index.html" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item"><a href="" class="nav-link">Our Team</a></li>
-                    <li class="nav-item"><a href="" class="nav-link"> About US </a></li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link"> Contact Us</a>
+                    <li class="nav-item"><a target="_blank" href="https://nitrkl.ac.in/SAC/" class="nav-link"> SAC</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Societies </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item pt-2" href="#">Technical</a>
+                          <a class="dropdown-item pt-3" href="#">Games & Sports</a>
+                          <a class="dropdown-item pt-3" href="#">Film & Music</a>
+                          <a class="dropdown-item pt-3 pb-2" href="#">Literary & Cultural </a>
+                          <a class="dropdown-item pt-3 pb-2" href="#">Independent(SAC)</a>
+                          <a class="dropdown-item pt-3 pb-2" href="#">Independent</a>
+                    </div>
                     </li>
-                    <li class="nav-item"><a href="" class="nav-link"> Register</a></li>
-                    <li class="nav-item"><a href="" class="nav-link"> Login</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fests </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item pt-2" href="#">Innovision</a>
+                          <a class="dropdown-item pt-3" href="#">Nitrutsav</a>
+                          <a class="dropdown-item pt-3" href="#">Cosmopolitan</a>
+                          <a class="dropdown-item pt-3 pb-2" href="#">Others</a>
+                    </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item pt-2" href="#">NITR Conclave</a>
+                          <a class="dropdown-item pt-3" href="#">IMUN</a>
+                          <a class="dropdown-item pt-3" href="#">NES</a>
+                          <a class="dropdown-item pt-3" href="#">Bio Conclave</a>
+                          <a class="dropdown-item pt-3 pb-2" href="#">HackNITR</a>
+                          <a class="dropdown-item pt-3 pb-2" href="#">Epreuve Cyborg</a>
+                          <a class="dropdown-item pt-3 pb-2" href="#">Others</a>
+
+                    </div>
+                    </li>
+                    <li class="nav-item"><a target="_blank" href="../public/team.html" class="nav-link">Our Team</a></li>
+                    <li class="nav-item"><a target="_blank" href="../public/about.html" class="nav-link"> About US </a></li>
+                    <li class="nav-item"><a target="_blank" href="../public/contact.html" class="nav-link"> Contact Us</a></li>
+                    
+                    
                 </ul>
-            </div>
+
+            </div> 
         </div>
     </nav>
 
     <!-- ************************************second navbar************************************ -->
 
-    <div class="container-fluid p-0 m-0 navbar2 bg-success">
+    <!-- <div class="container-fluid p-0 m-0 navbar2 bg-success">
         <h1 class="">NITR CLUBS</h1>
-    </div>
+    </div> -->
 
     <!-- ************************************ / second navbar************************************ -->
 
     <!-- ************************************ body starts here************************************ -->
 
-    <section id="body-div">
+    <section id="body-div" class="bg-white">
         <div class="body-bg">
             <h1 class="text-uppercase">Welcome to</h1>
-            <h2>NITR Clubs</h2>
+            <h2>NITR Clubs</h2><br>
+            <p class="pr-5">Clubs are an integral part when it comes to college life. The monotony of daily academic routine is curbed by the co curricular activities that provide relief and an extra edge to personality development and working with peers having same interests. Choosing the right club in a college like NITR can be quite puzzling due to the vast number of incredible clubs it has. Hence the having the right idea about clubs gives one the incentive to choose the best club that would suit him/her.</p>
         </div>
-        <div class="video-player">
-            <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
+        <div class="video-player pb-0 bg-info mx-auto utube-plyr" style="min-width: 200px;width: 966px;">
+            <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY" class="bg-danger"></div>
         </div>
-        <div class="body-intro container pb-5">
-            <div class="py-3">
-                <h1>About NITR Clubs</h1>
+        <div class="body-intro container-fluid pb-5">
+            <div class="row">
+            <div class="col-9 col-md-8 mx-auto">
+            <div class="py-3 mx-5 px-2 section2-text">
+                <p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centre (SAC) plays an important role in it since Along with academic excellence, NIT Rourkela promotes extra-curricular activities to ensure all-round development of personality.<br><br>The SAC is the central hub for student activities, student organizations, programming, events, sports, recreation and fun at the institute campus.<br><br>
+                    The Student Activity Centre is organized into four primary societies and a host of satellite clubs. Besides, every society has satellite clubs that have their management under the overall supervision of SAC. The facility is devoted to student recreation and socialization to serve students, faculty, staff, alumni, and guests.<br><br></p>
+              <div class="row section2-text-info">
+                  <div class="col-6 col-md-5"><p><span>SAC President</span><br>
+                    Prof. Seemita Mohanty<br>
+                    Professor
+                    (SAC)<br>
+                     0661-2462692 (Off)<br>
+                     presidentsac@nitrkl.ac.in<br></p></div>
+                  <div class="col-6 col-md-7"><p class="text-right"><span>SAC Office Address</span><br>
+                    Student Activity Center<br>
+                    NIT Rourkela, Odisha - 769008<br>
+                    0661-246-2160<br>
+                     sac@nitrkl.ac.in<br></p></div>
+                     <div class="col-11 col-md-11 horizontal-seperator mt-5 mx-auto"></div>
+                    </div>
+              </div> 
+                   
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque corrupti accusantium et pariatur deleniti, incidunt molestias quas voluptatum inventore aliquid recusandae minus tenetur minima maiores perspiciatis tempora, est similique repellat
-                repellendus provident! Dicta, facere. Sed saepe esse, accusamus quasi ea eaque eligendi, quia, ullam culpa commodi nam qui vero? Officia asperiores mollitia quod blanditiis accusantium, voluptatem illo architecto vero harum nesciunt sed
-                impedit autem ad id nostrum rem labore necessitatibus repellendus saepe fugiat est sit cumque dicta perspiciatis! Quisquam nemo debitis repellendus repudiandae totam a asperiores labore eius, quia soluta ut quod ullam illo amet modi aliquam
-                reprehenderit. Labore, odio.</p>
         </div>
+     
+    </div>
     </section>
-
-    <section class="cards mb-5">
+    <section class="pb-5" id="section3">
         <div class="row">
+            <div class="col-md-10 col-11 mx-auto inside-section3 p-5">
+                <div id=" " class="row mx-auto">
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div> <div class="count percent" data-count="100">
+      0
+    </div> </div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div> <div class="count percent" data-count="100">
+      0
+    </div> </div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div> <div class="count percent" data-count="100">
+      0
+    </div> </div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div> <div class="count percent" data-count="100">
+      0
+    </div></div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div> <div class="count percent" data-count="100">
+      0
+    </div></div></div>
+                </div>    
 
-
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                <div class="row mx-auto mt-3">
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div>  </div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div>  </div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div>  </div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div>  </div></div>
+                    <div class="col py-2 smalldiv"><div class="smalldiv-content"><div class="smalldiv-footer"></div>  </div></div>
                 </div>
             </div>
         </div>
+
+
+
+
+        <div id="counter" style="margin-top: 600px;">
+   
+            <div class="count percent" data-count="100">
+              0
+            </div>
+            <div class="count percent" data-count="100">
+              0
+            </div>
+            <div class="count percent" data-count="100">
+                0
+              </div>
+              <div class="count percent" data-count="100">
+                0
+              </div>
+        </div>
+
+
+
+
     </section>
-    <section class="cards mb-5">
+<section class="bg-white py-5" id="section4">
+    <div class="row">
+        <div class="col-10 col-md-8 mx-auto">
+            <div class="row mx-auto">
+                <div class="col-12 col-md-4 my-3 mx-auto card-hover2"><div class="card-hover"><a class="text-decoration-none" target="_blank" href="https://nitrkl.ac.in/docs/SAC/SACConstitution.pdf"><div class="section4-content bg-white px-4 py-5"><h2>SAC Constitution</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centre</p><a class="secion4-a" href="https://nitrkl.ac.in/docs/SAC/SACConstitution.pdf" class="text-decoration-none text-succes">Read More</a></div></a></div></div>
+                <div class="col-12 col-md-4 my-3 mx-auto card-hover2"><div class="card-hover"><a class="text-decoration-none" target="_blank" href="https://nitrkl.ac.in/SAC/Management"><div class="section4-content bg-white px-4 py-5"><h2>SAC Management</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="https://nitrkl.ac.in/SAC/Management" class="text-decoration-none text-succes">Read More</a></div></a></div></div>
+                <div class="col-12 col-md-4 my-3 mx-auto card-hover2"><div class="card-hover"><a class="text-decoration-none" target="_blank" href="https://nitrkl.ac.in/SAC/Events"><div class="section4-content bg-white px-4 py-5"><h2>SAC Events</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="https://nitrkl.ac.in/SAC/Events" class="text-decoration-none text-succes">Read More</a></div></a></div></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container_fluid quote">
+    <div class="blue_grad_quote"> </div>
+    <div class="black_grad_quote"> </div>
         <div class="row">
-
-
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="col-10 col-md-10 mx-auto sec_quote p-0">
+                <h2 class="quote_heading text-center white">Quote of the week</h2>
+                <p class="text-justify quote_para ml-0 mr-0">
+                </p></div>
         </div>
     </section>
-    <section class="cards mb-5">
+    <section id="section4" class="cards py-5 section5">
         <div class="row">
+            <div class="col-md-8 col-10 mx-auto">
+        <div class="row mx-auto">
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./techsociety.html"><div class="section4-content bg-white px-4 py-5"><h2>Technical society</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centre</p><a class="secion4-a" href="./techsociety.html" class="text-decoration-none text-succes">See More</a></div></a></div>
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./sports.html"><div class="section4-content bg-white px-4 py-5"><h2>Games & Sports</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="./sports.html" class="text-decoration-none text-succes">See More</a></div></a></div>
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./film&music.html"><div class="section4-content bg-white px-4 py-5"><h2>Film & Music</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="./film&music.html" class="text-decoration-none">See More</a></div></a></div>
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./literary.html"><div class="section4-content bg-white px-4 py-5"><h2>Literary & Cultural</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centre</p><a class="secion4-a" href="./cultural&literary.html" class="text-decoration-none text-succes">See More</a></div></a></div>
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./independentundersac.html"><div class="section4-content bg-white px-4 py-5"><h2>Independent(SAC)</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="./independentundersac.html" class="text-decoration-none text-succes">See More</a></div></a></div>
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./independent.html"><div class="section4-content bg-white px-4 py-5"><h2>Independent</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="./independent.html" class="text-decoration-none text-succes">See More</a></div></a></div>
 
-
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4 my-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/codehub-bg.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center mb-4">Card title</h5>
-                        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
         </div>
+        </div>
+    </div>
     </section>
+    <section id="section4" class="cards py-5 section5 bg-white">
+        <div class="row">
+            <div class="col-md-8 col-10 mx-auto">
+        <div class="row mx-auto">
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./techsociety.html"><div class="section4-content bg-white px-4 py-5"><h2>Innovision</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centre</p><a class="secion4-a" href="./techsociety.html" class="text-decoration-none text-succes">See More</a></div></a></div>
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./sports.html"><div class="section4-content bg-white px-4 py-5"><h2>Nitrutsav</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="./sports.html" class="text-decoration-none text-succes">See More</a></div></a></div>
+            <div class="col-12 col-md-4 my-3 mx-auto card-hover"><a class="text-decoration-none" href="./film&music.html"><div class="section4-content bg-white px-4 py-5"><h2>Cosmopolitan</h2><br><p class="text-justify py-4">A2NITRClubs is an encyclopedia of all the clubs, fests and Flagship Events and The Student Activity Centrea</p><a class="secion4-a" href="./film&music.html" class="text-decoration-none">See More</a></div></a></div>
+        </div>
+        </div>
+    </div>
+    </section>
+  
 
 
     <!-- ************************************ / body ends here ************************************ -->
 
     <!-- /* footer starts here */ -->
-    <footer class="bg-dark">
-        <div class="bg-dark text-white footer-lp container-fluid">
+    <footer class="bg-white" style="box-shadow: 0 -6px 16px rgba(0,0,0,.20);">
+        <div class="bg-white text-white footer-lp container-fluid">
             <div class="row d-flex justify-content-center">
                 <div class="col-11 col-md-10 footer-inside">
                     <div class="row">
@@ -272,10 +365,10 @@
 
     <!-- plyr javascript -->
     <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <!-- /#wrapper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js'></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
@@ -290,6 +383,7 @@
         });
         const player = new Plyr('#player');
     </script>
+    <script></script>
 </body>
 
 </html>
