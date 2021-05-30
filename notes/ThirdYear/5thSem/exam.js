@@ -27,7 +27,7 @@ const viewerOptions = {
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
     var urlToPDF = directLinkFromDropboxLink(dropboxLink);
     var adobeDCView = new AdobeDC.View({
-        clientId: "clientId", 
+        clientId: clientId, 
         divId: "embeddedView"
     });
     adobeDCView.previewFile(
