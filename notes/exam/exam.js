@@ -1,4 +1,4 @@
- <script type="text/javascript">
+
     document.addEventListener("adobe_dc_view_sdk.ready", function()
     {
         var adobeDCView = new AdobeDC.View({clientId: "a4aada6713664078a2aaa0d785da8482", divId: "adobe-dc-view"});
@@ -8,4 +8,3 @@
           metaData: {fileName: "Bodea Brochure.pdf"}
        });
     });
- </script>
