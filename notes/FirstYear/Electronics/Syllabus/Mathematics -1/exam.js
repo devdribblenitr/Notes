@@ -14,7 +14,7 @@ function closeFunction(){
 //scripts that fetch pdf from dropbox through adobe sdk api
 
 const dropboxLink = "https://www.dropbox.com/s/x0zof6tyrzhqsdp/Mathematics%20-1-converted.pdf?dl=0";
-const clientId = "2bccfe6f868e4c41a34fa7f653bcddc0";
+const clientId = "a4aada6713664078a2aaa0d785da8482";
 const viewerOptions = {
     embedMode: "FULL_WINDOW",
     //embedMode: "SIZED_CONTAINER",
@@ -29,7 +29,7 @@ const viewerOptions = {
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
     var urlToPDF = directLinkFromDropboxLink(dropboxLink);
     var adobeDCView = new AdobeDC.View({
-        clientId: "9df0d2ddd369458eaf116fcddc4bf6a8", 
+        clientId: clientId, 
         divId: "embeddedView"
     });
     adobeDCView.previewFile(
