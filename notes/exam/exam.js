@@ -1,7 +1,7 @@
 
     document.addEventListener("adobe_dc_view_sdk.ready", function()
     {
-        var adobeDCView = new AdobeDC.View({clientId: "a4aada6713664078a2aaa0d785da8482", divId: "adobe-dc-view"});
+        var adobeDCView = new AdobeDC.View({clientId: clientId, divId: "adobe-dc-view"});
         adobeDCView.previewFile(
        {
           content:   {location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
