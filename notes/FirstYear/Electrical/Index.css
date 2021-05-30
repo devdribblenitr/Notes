@@ -1,4 +1,22 @@
 #content-preloader{display:none;}#loader{ position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; width: 400px;  height: 400px;  z-index: 99;  transform: scale(.4);}#loader img{width:400px;}
+.gcse-search{
+  width: 350px !important;
+  height: 60px !important; 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .15) !important;
+}
+.gsc-search-button, .gsc-search-button-v2{
+  background-color: #0CA678 !important;
+  outline: none !important;
+  border: none !important;
+}
+.gsc-control-cse{
+  /* padding: 9px !important; */
+  border: none !important;
+  width: 350px !important;
+}
+.form.gsc-search-box{
+  margin-bottom: 0 !important;
+}
 *{
   margin: 0;
   padding: 0;
