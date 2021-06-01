@@ -90,7 +90,7 @@ body{
  left: 0px;
  top: 114px;
  background: #FFFFFF;
- /* z-index: 1; */
+ z-index: 1;
  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
    -webkit-transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
