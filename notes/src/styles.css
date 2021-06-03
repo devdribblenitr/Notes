@@ -1,3 +1,42 @@
+.modal-body h1 {
+  font-weight: 900;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgb(78, 78, 78);
+}
+.modal-body h1 span{
+  font-size: 40px;
+}
+.modal-content{
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,.25);
+  border-radius: 2px !important;
+  padding-bottom: 30px !important;
+}
+.modal-body p{
+  padding: 30px !important;
+  color: #504f4f;
+  text-align: justify;
+}
+.modal-body p a{
+  color: #0CA678;
+}
+.modal-body{
+  padding-top: 60px !important;
+  padding-bottom: 80px !important;
+}
+.modal-header{
+  border:none !important;
+}
+.modal-dialog {
+    margin-top: 90px !important;
+}
+.modal-header .close {
+  outline: none !important;
+}
+
+
+
 #body-div .title-div{
   background-color: white;
   box-shadow: 0 4px 16px #00000026;

@@ -1,3 +1,8 @@
+$(document).ready(function(){       
+  $('#myModal').modal('show');
+   });
+
+
 // navbar 
 function openFunction(){
     document.getElementById("sidebar-wrapper").style.transform="translateX(0)";
