@@ -1,2 +1,2 @@
 // that is common for all clientId
-var clientId = "04477856370c423db9e76d12cc3ce741";
+var clientId = "19c68e8d20ad45ddb803e952736817c2";
