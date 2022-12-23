@@ -14,7 +14,7 @@ function closeFunction(){
 //scripts that fetch pdf from dropbox through adobe sdk api
 
 const dropboxLink = "https://www.dropbox.com/s/x0zof6tyrzhqsdp/Mathematics%20-1-converted.pdf?dl=0";
-const clientId = "04477856370c423db9e76d12cc3ce741";
+const clientId = "b027ee382d2b479bbc10cb4276213ac8";
 const viewerOptions = {
     embedMode: "FULL_WINDOW",
     //embedMode: "SIZED_CONTAINER",

@@ -14,7 +14,7 @@ function closeFunction(){
 //scripts that fetch pdf from dropbox through adobe sdk api
 
 const dropboxLink = "https://www.dropbox.com/s/sfox11nrl9thweu/PH1002%20mid%2018-19.pdf?dl=0";
-const clientId = "04477856370c423db9e76d12cc3ce741";
+const clientId = "b027ee382d2b479bbc10cb4276213ac8";
 const viewerOptions = {
     embedMode: "FULL_WINDOW",
     //embedMode: "SIZED_CONTAINER",
@@ -29,7 +29,7 @@ const viewerOptions = {
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
     var urlToPDF = directLinkFromDropboxLink(dropboxLink);
     var adobeDCView = new AdobeDC.View({
-        clientId: "04477856370c423db9e76d12cc3ce741", 
+        clientId: "b027ee382d2b479bbc10cb4276213ac8", 
         divId: "embeddedView"
     });
     adobeDCView.previewFile(
